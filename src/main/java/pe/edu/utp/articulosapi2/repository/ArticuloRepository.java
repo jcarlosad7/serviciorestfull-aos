@@ -11,4 +11,5 @@ import pe.edu.utp.articulosapi2.entity.Articulo;
 @Repository
 public interface ArticuloRepository extends JpaRepository<Articulo, Integer> {
 	List<Articulo> findByNombreContaining(String nombre, Pageable page);
+	Articulo findByNombre(String nombre);
 }
